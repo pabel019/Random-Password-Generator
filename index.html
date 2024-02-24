@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Home || Random Password Generator</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<main>
+			<div class="container">
+				<h1>
+					Generate a <br />
+					<span>Random Password</span>
+				</h1>
+				<div class="password">
+					<input class="passwordField" type="text" placeholder="Password" />
+					<img id="image" onclick="copyPass()" src="./images/copy.png" />
+				</div>
+				<button onclick="createPassword()">
+					<img src="./images/generate.png" alt="" />Generate Password
+				</button>
+			</div>
+			<!-- popUp one -->
+			<div class="popUp_1">
+				<div class="content">
+					<img src="./images/404-tick.png" alt="" />
+					<h3>Created</h3>
+				</div>
+				<button id="btn_1" onclick="closePopup_1()">OK</button>
+			</div>
+			<!-- popUp two -->
+			<div class="popUp_2">
+				<div class="content">
+					<img src="./images/404-tick.png" alt="" />
+					<h3>Copped</h3>
+				</div>
+				<button id="btn_2" onclick="closePopup_2()">OK</button>
+			</div>
+		</main>
+
+		<script src="./JS/main.js"></script>
+	</body>
+</html>
